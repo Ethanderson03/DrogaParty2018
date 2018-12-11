@@ -64,6 +64,13 @@ Static Elements
 	left: 70px;
 }
 
+#textTopRight
+{
+	top: 80px;
+	right: 70px;
+	text-align: right;
+}
+
 #textBottomLeft
 {
 	bottom: 80px;
@@ -341,6 +348,28 @@ page CSS
 	margin: auto;
 	display: none;
 	opacity: 0;
+}
+
+.mobile
+{
+	width: 100vw;
+	height: 100vh;
+	background:black;
+	color:white;
+	position:fixed;
+	display: none;
+	z-index: 10000000;
+	text-align:center;
+	padding: 50px;
+	font-family: Sans, helvetica;
+	font-size: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+	.mobile
+	{
+		display: block;
+	}
 }
 
 
